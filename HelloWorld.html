@@ -4,11 +4,14 @@
 
 <button id="showAlert">Click me</button>
 
+<button onclick="showHelloWorld()">Click me at first</button>
+<button id="showAlert">Click me second</button>
+
 <script>
-  document.getElementById("showAlert").addEventListener("click", myFunction);
   function showHelloWorld() {
-    alert("Hello World!");
+	  alert("Hello World!");
   }
+  document.getElementById("showAlert").addEventListener("click", showHelloWorld);
 </script>
 
 </body>
